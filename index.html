@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8473071de8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Support Masters</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -23,9 +24,9 @@
     <header>
         <!-- Inicio menu con bootstrap -->
         <nav class=" navbar navbar-expand-lg menu">
-            <div class="container-fluid inicio-container">
+            <div class="container-fluid inicio-container ">
                 <a class="navbar-brand" href="#">
-                    <img class="logo" src="./img/Logo-sin-fondo.png" alt="logo Support Masters"></a>
+                    <img class="logo" src="./img/logo-sin-fondo.png" alt="logo Support Masters"></a>
                 <!-- Bonton hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#SupportMasters"
                     aria-controls="SupportMasters" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,9 +92,9 @@
     </div>
     <!-- Cierre de Carusel bootstrap -->
     <main>
-        <div class="inicio-container responsive">
-            <section class="main-parrafo-div">
-                <article class="primer-parrafo">
+        <div class="container">
+            <section class="main-parrafo-div ">
+                <article class="primer-parrafo col-sm-12 col-lg-6  col-xl-6">
                     <h3>Sobre Nuestra Empresa</h3>
                     <p>En Support Masters, nos especializamos en brindar soporte técnico a empresas, así como en el
                         mantenimiento e instalación de equipos. </p>
@@ -103,130 +104,134 @@
                     <p>Trabajamos de manera eficiente para garantizar que tus sistemas estén siempre en perfecto estado
                         de
                         funcionamiento.</p>
+                    <button class="boton mt-4 main-boton1"><a href="./pages/quienes-somos.html">Leer más</a></button>
                 </article>
-                <img class="main-img-parrafo1" src="./img/oficina.jpg" alt="equipo de trabajo de Support Masters">
+                <div class="contenedor-img"><img class="main-img-parrafo1 medida-img" src="./img/oficina.jpg"
+                        alt="equipo de trabajo de Support Masters"></div>
             </section>
-            <button class="boton main-boton1"><a href="./pages/quienes-somos.html">Leer más</a></button>
-        </div>
 
+        </div>
         <!-- Aplicando Bootstrap para las tarjetas -->
 
-        <div class="inicio-container container row mt-5 d-flex justify-content-center align-items-center ">
-            <hr>
+        <div class="container centrar-tarjeta container-fluid row pt-5 ">
+            <hr class="ocultar">
             <!-- Tarjeta 1 -->
-            <div class=" col-sm-12 col-md-6 col-lg-4  col-xl-4">
-                <div class="card border-0  m-4  text-center shadow" style="width: 15rem;">
-                    <img src="./img/Contacto_4.png" class="ms-5 rounded-circle " width="45%" alt="...">
+            <h2 class="text-center p-5">Nuestros Servicios</h2>
+            <div class=" col-sm-12  col-lg-4 col-xl-4 centrar-tarjeta mb-5">
+                <div class="card border-0  m-4 card-center text-center shadow " style="width: 15rem;">
+                    <i class=" icon-inicio fa-regular fa-clock"></i>
                     <div class="card-body">
-                        <h5 class="card-title">Respuesta rápida</h5>
-                        <p class="card-text ">Ante cualquier incidencia respondemos rápidamente para resolverla en el
+                        <h5 class="card-title card-titulo mt-4">Respuesta rápida</h5>
+                        <p class="card-text card-texto">Ante cualquier incidencia respondemos rápidamente para
+                            resolverla en el
                             menor
                             tiempo posible.</p>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta 2 -->
-            <div class=" col-sm-12 col-md-6 col-lg-4  col-xl-4">
-                <div class="card border-0 m-4 text-center shadow" style="width: 15rem;">
-                    <img src="./img/remota.png" class="ms-5 rounded-circle " width="50%" alt="...">
+            <div class=" col-sm-12  col-lg-4 col-xl-4 centrar-tarjeta mb-5">
+                <div class="card border-0 m-4  card-center text-center shadow" style="width: 15rem;">
+                    <span class="icon-inicio"> <i class="fa-brands fa-teamspeak fa-fw "> </i></span>
+                    <!-- <img src="./img/remota.png" class="rounded mx-auto d-block rounded-circle "height="230%" width="47%" alt="..."> -->
                     <div class="card-body">
-                        <h5 class="card-title">Asistencia Remota</h5>
-                        <p class="card-text">Muchas de nuestros servicios se realizan en remoto reduciendo el tiempo de
+                        <h5 class="card-title card-titulo">Asistencia Remota</h5>
+                        <p class="card-text card-texto">Muchas de nuestros servicios se realizan en remoto reduciendo el
+                            tiempo de
                             la
                             incidencia.</p>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta 3 -->
-            <div class=" col-sm-12  col-lg-4  col-xl-4">
-                <div class="card border-0 m-4 text-center shadow" style="width: 15rem;">
-                    <img src="./img/servicio.png" class="ms-5 rounded-circle " width="50%" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicio de Tickets</h5>
-                        <p class="card-text">Notificando las incidencias por ticket mantenemos un histórico de las
-                            mismas.
-                        </p>
-                    </div>
+            <div class=" col-sm-12 col-lg-4  col-xl-4 centrar-tarjeta mb-5">
+                <div class="card border-0 m-4 card-center text-center shadow" style="width: 15rem;">
+                    <span class="icon-inicio"> <i class="fa-solid fa-users-gear fa-fw "></i> </span>
+                    <!-- <img src="./img/servicio.png" class="rounded mx-auto d-block rounded-circle " width="50%" alt="...">
+                    <div class="card-body"> -->
+                    <h5 class="card-title card-titulo mt-4">Servicio de Tickets</h5>
+                    <p class="card-text card-texto">Notificando las incidencias por ticket mantenemos un histórico de
+                        las
+                        mismas.
+                    </p>
                 </div>
             </div>
-            <hr>
+        </div>
+        <hr class="ocultar">
 
         </div>
 
         <!-- Cierre Bootstrap para las tarjetas -->
-        <div class="fondo-div">
-            <div class="inicio-container ">
 
-                <div class="main-video-parrafo">
-                    <div class="main-video1">
-                        <iframe class="main-video" src="https://www.youtube.com/embed/mHwEbuURgfE?si=yng81w48RMq4Rx_r"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
+        <div class="fondo-div container ">
+            <div class="row reverse">
+                <div class="main-video1 col-sm-12 col-lg-6  col-xl-6">
+                    <iframe class="main-video" src="https://www.youtube.com/embed/mHwEbuURgfE?si=yng81w48RMq4Rx_r"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
 
-                    <div class="main-parrafo-inicio">
-                        <h3 class="texto-centrado"> Estamos aquí para ayudarte</h2>
-                            <p>Mejora tu productividad con el soporte de nuestro equipo Support Masters. </p>
-                            <p> Soluciones tecnológicas diseñadas para impulsar tu éxito. </p>
-                            <div class="boton-main">
-                                <button class="boton "><a href="./pages/contacto.html"> Contactanos</a> </button>
-                            </div>
-                    </div>
-
+                <div class="main-parrafo-inicio col-sm-12 col-lg-6  col-xl-6">
+                    <h3 class="texto-centrado"> Estamos aquí para ayudarte</h2>
+                        <p>Mejora tu productividad con el soporte de nuestro equipo Support Masters. </p>
+                        <p> Soluciones tecnológicas diseñadas para impulsar tu éxito. </p>
+                        <div class="boton-main">
+                            <button class="boton "><a href="./pages/contacto.html"> Contactanos</a> </button>
+                        </div>
                 </div>
             </div>
         </div>
-        <div class="inicio-container margin">
+
+        <div class="container margin">
             <h1 class="titulo"> Empresas que han confiado en Support Masters</h1>
         </div>
 
-        <div class="inicio-container">
-            <div class="container ">
+        <div class="container container-tarjeta">
 
 
-                <div class="img-css "><a href="https://www.sigo.com.ve/" target="_blank">
-                        <img src="./img/sigo.png"></a></div>
+            <div class="img-css "><a href="https://www.sigo.com.ve/" target="_blank">
+                    <img src="./img/sigo.png"></a></div>
 
-                <div class="img-css"><a href="https://www.prolicor.com.ve/" target="_blank">
-                        <img src="./img/prolicor.png"></a></div>
-
-
-                <div class="img-css"><a href="https://www.facebook.com/Portarossamgta/" target="_blank">
-                        <img src="./img/porta-rossa.png"></a></div>
+            <div class="img-css"><a href="https://www.prolicor.com.ve/" target="_blank">
+                    <img src="./img/prolicor.png"></a></div>
 
 
-                <div class="img-css ocultar"><a href="https://www.sunsolhoteles.com/" target="_blank">
-                        <img src="./img/sunsol.png"></a></div>
-
-                <div class="img-css ocultar "><a href="https://grupoleiros.com/" target="_blank">
-                        <img src="./img/leiros.png"></a></div>
+            <div class="img-css"><a href="https://www.facebook.com/Portarossamgta/" target="_blank">
+                    <img src="./img/porta-rossa.png"></a></div>
 
 
-                <!-- <div class="img-css"><img src="./img/rattan.jpg" width="150px" height="100"></div> -->
+            <div class="img-css ocultar"><a href="https://www.sunsolhoteles.com/" target="_blank">
+                    <img src="./img/sunsol.png"></a></div>
 
-                <div class="img-css ocultar"><a href="https://www.facebook.com/LaVelaCentroComercial/" target="_blank">
-                        <img src="img/la-vela.jpg"></a></div>
+            <div class="img-css ocultar "><a href="https://grupoleiros.com/" target="_blank">
+                    <img src="./img/leiros.png"></a></div>
 
-                <div class="img-css ocultar"><a href="https://www.facebook.com/riosupermercado/?locale=es_LA"
-                        target="_blank">
-                        <img src="img/rio.jpg"></a></div>
+            <div class="img-css ocultar "><a href="#" target="_blank">
+                    <img src="./img/rattan.jpg"></a></div>
 
-                <div class="img-css ocultar"><a href="https://www.facebook.com/mercadolaisla/" target="_blank">
-                        <img src="img/mercado-la-isla.png"></a></div>
+            <div class="img-css ocultar"><a href="https://www.facebook.com/LaVelaCentroComercial/" target="_blank">
+                    <img src="img/la-vela.jpg"></a></div>
 
-                <div class="img-css ocultar"><a
-                        href="https://www.ubikate.com.ve/web/bodegones-en-margarita-minimarket-gourmet-el-bodeguero-articulos-nacionales-e-importados"
-                        target="_blank">
-                        <img src="img/bodeguero.png"></a></div>
+            <div class="img-css ocultar"><a href="https://www.facebook.com/riosupermercado/?locale=es_LA"
+                    target="_blank">
+                    <img src="img/rio.jpg"></a></div>
 
-                <div class="img-css ocultar"><a href="https://www.facebook.com/p/Automercadosnova-100082890474741/"
-                        target="_blank">
-                        <img src="img/nova.jpg"></a></div>
+            <div class="img-css ocultar"><a href="https://www.facebook.com/mercadolaisla/" target="_blank">
+                    <img src="img/mercado-la-isla.png"></a></div>
 
-                <!-- <div class="img-css"><img src="img/costazul.png" width="150px" height="100"></div> -->
-            </div>
-        </div>
+            <div class="img-css ocultar"><a
+                    href="https://www.ubikate.com.ve/web/bodegones-en-margarita-minimarket-gourmet-el-bodeguero-articulos-nacionales-e-importados"
+                    target="_blank">
+                    <img src="img/bodeguero.png"></a></div>
+
+            <div class="img-css ocultar"><a href="https://www.facebook.com/p/Automercadosnova-100082890474741/"
+                    target="_blank">
+                    <img src="img/nova.jpg"></a></div>
+
+            <div class="img-css ocultar"><a href="#">
+                    <img src="img/costazul.png"></a></div>
+
 
     </main>
     <footer class="footer">

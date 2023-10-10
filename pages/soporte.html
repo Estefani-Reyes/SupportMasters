@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,29 +22,61 @@
 <body class="fondo-soporte">
 
     <header class="menu">
-        <div class="inicio-container menu-soporte">
-            <a href="../index.html"><img class="logo" src="../img/Logo-sin-fondo.png" alt="logo Support Masters"></a>
-            <nav class="enlaces">
-                <ul>
-                    <li><a class="nav-a" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-a" href="./quienes-somos.html">¿Quiénes somos?</a></li>
-                    <li><a class="nav-a" href="./nuestro-equipo.html">Nuestro Equipo</a></li>
-                    <li><a class="nav-a" href="./planes.html">Planes</a></li>
-                    <li><a class="nav-a" href="./contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </div>
+         <!-- Inicio menu con bootstrap -->
+         <nav class=" navbar navbar-expand-lg menu">
+            <div class="container-fluid inicio-container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../img/logo-sin-fondo.png" alt="logo Support Masters"></a>
+                <!-- Bonton hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#SupportMasters"
+                    aria-controls="SupportMasters" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="SupportMasters">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-a text-light" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-a text-light" href="./quienes-somos.html">¿Quiénes
+                                somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-a text-light" href="#">Soporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-a text-light" href="./planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-a text-light" href="./contacto.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-a text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./nuestro-equipo.html">Nuestro Equipo</a>
+                                </li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    </div>
+
     <main>
         <div class="formulario">
-            <h1 class="titulo">Soporte Support Masters</h1>
+            <h1 class="titulo"> <span style="color: #ffff;">Soporte</span> Support Masters</h1>
             <div class="soporte-form">
                 <h2 class="inicio-sesion"> Por favor inicie sesión</h2>
                 <form class="inicio-sesion" action="">
                     <input class="iniciar " type="email" name="" id="" placeholder="Usuario o Correo Electrónico"
                         required>
                     <input class="iniciar " type="password" placeholder="Contraseña" required>
-                    <p><input type="checkbox" name="Recuerdame" id=""> Recuerdame</p>
+                    <p class="recordar"><input type="checkbox" name="Recuerdame" id=""> Recuerdame</p>
                     <div class="boton-main">
                         <button class="boton enlace-boton-soporte"> <a href="../index.html"> Iniciar Sesión</a></button>
                     </div>
@@ -50,7 +85,8 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+
+    <footer class="footer footer-soporte">
         <div class="footer-container inicio-container">
             <div>
                 <ol class="footer-menu">
@@ -62,7 +98,7 @@
             </div>
 
             <div class="footer-horario">
-                <h4 class="footer-titulos">Horario de Atención</h4>
+                <h4 class="footer-titulos ocultar">Horario de Atención</h4>
                 <ol>
                     <li>Lunes a Sabados</li>
                     <li>8:00 am a 5:00 pm</li>
@@ -86,6 +122,9 @@
         </div>
         <p class="texto-centrado letra">Copyright © 2023 Support Masters | Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
