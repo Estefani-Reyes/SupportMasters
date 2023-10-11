@@ -125,9 +125,11 @@ p {
     margin-right: auto;
 }
 
-.fondo-div {
+
+.fondo-video {
     background-color: #f2f2f6;
 }
+
 
 .main-video1 {
     margin-top: 5%;
@@ -200,11 +202,12 @@ p {
 /*Zoom a los logos y a los iconos con pseudoclase hover*/
 .img-css:hover {
     transform: scale(1.5);
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
 }
 
-.logo:hover {
-    transform: scale(1.5);
-}
 
 .redes-sociales:hover {
     transform: scale(1.5);
@@ -217,6 +220,12 @@ p {
     transform: scale(1.5);
 }
 
+.tarjeta:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
 .boton a {
     color: #5d635f;
 }
@@ -276,7 +285,7 @@ p {
 .planes {
     border: 1px solid #8a8a8a;
     width: 500px;
-    height: 600px;
+    height: 860px;
     margin-left: 50px;
     padding: 70px 30px;
     text-align: justify;
@@ -368,7 +377,10 @@ p {
     border: 3px solid #f4f6f8;
     padding: 10px;
 }
-
+.form-floating>label {
+    color: #3533cd;
+    font-size: 15px;
+}
 .iniciar::placeholder {
     color: #3533cd;
     font-size: 15px;
@@ -393,6 +405,7 @@ p {
     padding: 15px;
     margin: auto;
 }
+
 
 .tam-form {
     margin-bottom: 16px;
@@ -754,7 +767,6 @@ ol li {
 
     .main-parrafo-inicio {
         margin-top: 50px;
-        margin-left: 10%;
         font-size: 14px;
     }
 
@@ -830,17 +842,19 @@ ol li {
  .plan {
     display: flex;
     flex-direction: column;
-
 }
 
 .planes {
-    height: 450px;
-    width: 250px;
+    height: 700px;
+    width: 319px;
+    font-size: 12px;
+}
+.plan-basico {
+    height: 600px; 
 }
 
 .plan-mt {
     margin-top: 50px;
-    height: 530px;
 }
 
 .titulo-planes {
@@ -859,7 +873,6 @@ ol li {
    
 }
 }
-
 
 @media ((min-width:577px) and (max-width:767px)) {
    
@@ -960,11 +973,12 @@ ol li {
     }
 
     .planes {
-        height: 350px;
+        height: 600px;
     }
 
     .plan-mt {
         margin-top: 50px;
+        height: 680px;
     }
 
     .titulo-planes {
@@ -1009,17 +1023,10 @@ ol li {
     }
 
     /*---*/
-    /* .container {
-        justify-content: flex-start;
-    } */
+    
 
-    .fondo-div {
-        background-color: none;
-        width: 100%;
-    }
 
     .main-parrafo-inicio>p {
-        /* width: 80%; */
         font-size: 13px;
     }
 
@@ -1031,7 +1038,7 @@ ol li {
     .main-parrafo-inicio>h3 {
         color: #3533cd;
         font-size: 18px;
-        text-align: start;
+        text-align: center;
     }
 
     .main-video {
@@ -1072,11 +1079,12 @@ ol li {
     }
 
     .planes {
-        height: 350px;
+       height: 630px;
     }
 
     .plan-mt {
         margin-top: 50px;
+        height: 680px;
     }
 
     .titulo-planes {
@@ -1089,3 +1097,13 @@ ol li {
     }
 
 }
+@media (min-width: 1000px) {
+    .main-video {
+      width: 100%;
+    
+    }
+    .main-parrafo-inicio {
+        margin-left: 6%;
+
+    }
+  }

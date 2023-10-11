@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +20,58 @@
 </head>
 
 <body>
-    <header class="menu">
-        <div class=" menu-soporte">
-            <a href="../index.html"><img class="logo" src="../img/logo-sin-fondo.png" alt="logo Support Masters"></a>
-            <nav class="enlaces">
-                <ul>
-                    <li><a class="nav-a" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-a" href="./quienes-somos.html">¿Quiénes somos?</a></li>
-                    <li ><a class="nav-a" href="./soporte.html">Soporte</a></li>
-                    <li><a class="nav-a" href="#">Planes</a></li>
-                    <li><a class="nav-a" href="./contacto.html">Contactanos</a></li>
+     <!-- Inicio menu con bootstrap -->
+     <nav class=" navbar navbar-expand-lg menu">
+        <div class="container-fluid inicio-container">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../img/logo-sin-fondo.png" alt="logo Support Masters"></a>
+            <!-- Bonton hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#SupportMasters"
+                aria-controls="SupportMasters" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="SupportMasters">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-a text-light" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-a text-light" href="./quienes-somos.html">¿Quiénes
+                            somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-a text-light" href="./soporte.html">Soporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-a text-light" href="#">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-a text-light" href="./contacto.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-a text-light" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./nuestro-equipo.html">Nuestro Equipo</a>
+                            </li>
+                        </ul>
                 </ul>
-            </nav>
+            </div>
         </div>
+    </nav>
     </header>
     <main>
         <h2 class="titulo2 titulo-planes">Conoce Nuestros Planes</h2>
         <h1 class="titulo">PLANES - Support Masters</h1>
         <h2 class="titulo2">¿Tienes una pequeña o mediana empresa?</h2>
         <h3 class="titulo2">Estos son los planes ideales para tu negocio</h3>
-        <a href="https://web.whatsapp.com/" target="_blank"> <img class="whatsapp" src="../img/whatsapp-logo.png"
+        <a href="https://web.whatsapp.com/" target="_blank"> <img class="whatsapp ocultar" src="../img/whatsapp-logo.png"
                 alt="whatsapp de Support Masters"></a>
         <div class="plan">
-            <section class="planes">
+            <section class="planes plan-basico">
                 <article>
                     <h2 class="texto-centrado">PLAN BASICO</h2>
                     <ul>
@@ -121,6 +153,9 @@
         </div>
         <p class="texto-centrado letra">Copyright © 2023 Support Masters | Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
